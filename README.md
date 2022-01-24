@@ -1,4 +1,5 @@
-# rock-paper-scissors
-Rock Paper Scissors Project from The Odin Project
+Basic console game written for The Odin Project's Rock Paper Scissors project.
 
-https://www.theodinproject.com/paths/foundations/courses/foundations/lessons/rock-paper-scissors
+Begin a game and see who will be the first to score 3 wins by calling the function game();
+
+Future iteration(s) to include GUI.
