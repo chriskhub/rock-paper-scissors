@@ -10,7 +10,16 @@ function computerPlay() {
     return randomPlay;
 }
 
-function playRound(playerSelection, computerSelection) {
+function checkWin(playerScore, computerScore) {
+    if (playerScore === 3) {
+        console.log("You win the challenge!");
+    } else if (computerScore === 3) {
+        console.log("Sorry, you lost the challenge.");
+    }
+}
+
+function game() {
+    while ((playerScore) || (computerScore) !== 3) {
     playerSelection = prompt("Rock, paper, or scissors?").toLowerCase();
     computerSelection = computerPlay().toLowerCase();
     console.log(playerSelection);
@@ -44,24 +53,5 @@ function playRound(playerSelection, computerSelection) {
     }
     checkWin(playerScore, computerScore);
 }
-
-
-function checkWin(playerScore, computerScore) {
-    if (playerScore === 3) {
-        console.log("You win the challenge!");
-    } else if (computerScore === 3) {
-        console.log("Sorry, you lost the challenge.");
-    }
 }
-
-// function game() {
-//     for (var i = 0; i < 5; i++) {
-//         playerSelection = prompt("Rock, paper, or scissors?").toLowerCase();
-//         computerSelection = computerPlay().toLowerCase();
-//         checkWin(playerScore, computerScore);
-//         console.log(playerSelection);
-//         console.log(computerSelection);
-//         playRound(playerSelection, computerSelection);
-//     }
-// }
 
